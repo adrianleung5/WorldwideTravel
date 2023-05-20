@@ -1,108 +1,91 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# WorldWideTravel
 
-Welcome USER_NAME,
+GlotbalTravel is a fictional holiday review site. This website will allow users to view, share their their expeirences on theur travels.
+They will also be able comment underneath the holiday posts and also like them. Users will need to be logged in to get full functionality
+of the site.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# User-Experience-Design
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## The-Strategy-Plane
 
-## Gitpod Reminders
+### Site-Goals
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The site is aimed to enable travalers to have a simplostic way to share their expperiences with other fellow travelers. The site should enable
+users to gain and develop insights and ideals for potential future holidays through engaging with the website.
 
-`python3 -m http.server`
+#### User Stories
 
-A blue button should appear to click: _Make Public_,
+Below are the user stories that were added to the Github Project.
 
-Another blue button should appear to click: _Open Browser_.
+**EPIC | Site Navigation**
+- As a User I can easily navigate around the site so that I can view different pages and sections on the site.
+- As a User I can click on the about page so that so that I can find out what the website is about and how to use it.
+- As a User I can view the list of recipes so that I can pick one to read.
+- As a User I can see the list of holiday destinations so that I can pick one to view.
+- As a User I can search for a holiday destination I that I am looking for.  
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+**EPIC | Crud Functionality**
+- As a User I can add a travel rview so that eother people can view it. 
+- As a User I can Edit/Delete my reviews so that I can make changes even after I have posted a recipe.
+- As a User I can like reviews so that I can show that I like a review without having to comment.
+- As a User I can add a wine that I like so that other people can see it.
+- As a User I can edit a review I added so that I can update or make changes.
+- As a User I can delete a review that I shared so that I have control over the reviews I share.
+- As a User I can comment on other reviews so that I can provide feedback.
+- As a User I can update my comments so that I can make changes incase I mistyped something or if I wish to delete the comment.
+- As a User I can View likes so that I can see how popular a recipe or comment is.
+- As a User I can Like comments so that I can show my appreciation of a comment.
 
-A blue button should appear to click: _Make Public_,
+**EPIC | Administration**
+- As a Site admin I can administer the site so that I can manage the sites content.
+- As a User I can reset my password so that I can change it if I have forgotten it or want to change it.
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+**EPIC | Register / Sign in and out**
+- As a User I can create an account so that I can add my own recipes and comment on other peoples recipes.
+- As a User I can Sign-in / Sign-out so that I can access features when signed in and signed out so that no one can access my account.
 
-To log into the Heroku toolbelt CLI:
+### Deploy on heroku<hr>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+1. Generate pipfile 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+   * Open the terminal and execute the command "pip3 freeze > requirements.txt" to generate a file containing all the necessary requirements.
 
-------
+2. Heroku Setup
 
-## Release History
+   * Access the [Heroku website](https://www.heroku.com/ "Heroku Website").
+   * Log in to your Heroku account and select <strong>Create an App</strong>.
+   * Click on the <strong>New button</strong> and create an <strong>app</strong>.
+   * Select a suitable name and choose your location.
+   * Proceed to the <strong>Resources tab</strong>.
+   * From the list of resources, pick <strong>Heroku Postgres</strong>.
+   * Go to the <strong>Deploy tab</strong>.
+   * Click on <strong>Connect to Github</strong> and find your repository.
+   * Open the <strong>Settings</strong> tab.
+   * Reveal Config Vars and include your Cloudinary, Database URL (from Heroku-Postgres), and Secret Key.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+3. Heroku Deployment
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+   * Visit the <strong>Deploy tab</strong>.
+   * Choose the <strong>main branch</strong> for deployment and activate <strong>automatic deployment</strong>.
+   * Opt for <strong>manual deployment</strong> to build the application.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### FORK THE REPOSITORY<hr>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+To create a duplicate of the repository on your account and make modifications without impacting the original project, follow these steps using the Fork feature on GitHub:
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+   * Access the [repository page](https://github.com/Oran-123/Hook-n-Slice-Golf "repository page") on your account.
+   * In the top right corner of the page, click on the Fork button.
+   * A forked version of the project will be created and added to your repository.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### CLONE THE REPOSITORY<hr>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+To create a replica of the repository on your local machine, follow these steps using the Clone feature:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+   * Access the [repository page](https://github.com/Oran-123/Hook-n-Slice-Golf "repository page") on your account.
+   * Locate the green <strong>Code</strong> button above the code window and click on it.
+   * Choose your preferred format from <strong>HTTPS, SSH</strong>, or <strong>GitClub CLI</strong>, and copy the provided URL (preferably HTTPS).
+   * Open your Integrated Development Environment (IDE) and launch Git Bash.
+   * Enter the command <strong>git clone</strong> followed by the copied URL in the Git Bash terminal.
+   * The repository will be cloned, and a local copy will be created on your machine.
