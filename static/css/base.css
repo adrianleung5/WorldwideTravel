@@ -13,4 +13,10 @@
     --white: #fff;
     --orange: #ffbf50;
 
+    /* Utils */
+    --small-box-shadow: 1px - 1px 7px 0 #0000061;
+    -- border: 1px solid #0000030;
+
+    /* Header */
+    background-color: var
 }
