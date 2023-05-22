@@ -1,2 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap');
-/* Header */
+
+:root {
+    /** Fonts */
+    --title: 'Pacifico, Quicksand'
+    --main-font: 'Pacifico, Quicksand'
+
+    /* Colours */
+    --background: #3f006a0f;
+    --blue: #0d6efd
+    --black: 
+
+}
