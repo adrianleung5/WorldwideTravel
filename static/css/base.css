@@ -35,7 +35,19 @@
     ]
 
     h1,h2,h3,h4,h5,h6 {
-        
+        flex: 1 0 auto;
+        background-color: 
+    }
+
+    main {
+        flex:1 0 Auto;
+        background-color: var(--white);
+
+    }
+
+    /* Footer */
+    footer {
+        flex-shrink: 0;
     }
     
 
