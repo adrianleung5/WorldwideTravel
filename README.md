@@ -45,6 +45,39 @@ Below are the user stories that were added to the Github Project.
 - As a User I can create an account so that I can add my own recipes and comment on other peoples recipes.
 - As a User I can Sign-in / Sign-out so that I can access features when signed in and signed out so that no one can access my account.
 
+## The-Surface-Plane
+
+### Design
+I have used google fonts to select a font type that best supports the goals of the website, to provide a fun and easy on eye travel site for holidaygoers. For the main text I have selected Open Sans. To make the headers and the navigation bar stand out form the text, I decided to use Fredoka.
+
+## Technolgies
+
+- HTML
+  - The structure of the Website was developed using HTML as the main language.
+- CSS
+  - The Website was styled using custom CSS in an external file.
+- JavaScript
+  - JavaScript was used to make the custom slider on the menu page change and the bootstrap date picker.
+- Python
+  - Python was the main programming language used for the application using the Django Framework.
+- Visual Studio Code
+  - The website was developed using Visual Studio Code IDE
+- GitHub
+  - Source code is hosted on GitHub
+- Git
+  - Used to commit and push code during the development of the Website
+- Font Awesome
+  - This was used for various icons throughout the site
+- Favicon.io
+  - favicon files were created at https://favicon.io/favicon-converter/
+- balsamiq
+  - wireframes were created using balsamiq from https://balsamiq.com/wireframes/desktop/#
+- Canva
+  - This was used to create the logo in header 
+- TinyPNG
+  - This was used to compress the hero image for optimal load times
+
+
 ### Deploy on heroku<hr>
 
 1. Generate pipfile 
