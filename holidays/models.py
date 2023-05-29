@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import user
+from cloudinary.models import CloudinaryField
 
 from djrichtextfeld.models import RichTextField
 
@@ -16,4 +17,7 @@ Class Holidays(models.Model):
         size={400, None}, quality=75, upload_to='recipes/', force_format='WEBP'
         blank=False, null=False 
     ) 
+
+    def_str_(self):
+        return self.title
 
