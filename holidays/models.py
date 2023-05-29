@@ -22,7 +22,7 @@ class Holidays(models.Model):
     
 
     class Meta:
-        ordering = ["-posted_date"]
+        ordering = ["-date_added"]
 
     def __str__(self):
         return str(self.title)
