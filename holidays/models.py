@@ -1,23 +1,28 @@
 from django.db import models
-from django.contrib.auth.models import user
+from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from djrichtextfield.models import RichTextField
 
-from djrichtextfeld.models import RichTextField
 
-# Create your models here.
+STATUS = ((0, "Draft"), (1, "Published"))
 
-Class Holidays(models.Model):
+class Holidays(models.Model):
+    """
+    A model to create and manage recipes
+    """
 
-    user = models.Foreignkey(User, related_name='receipe owner,' on_delete=models.CASCADE)
-    title = models.Charfield(max_length=300, null =False, blank=False)
-    description = models.Charfield(max_length=500, null=False, blank=False)
-    Instructions = RichTextField (max_length=10000, null=False, blank=False)
-    Highlights = RichTextField(max_length=10000, null=False, blank=False)
-    image = ResizedImageField(
-        size={400, None}, quality=75, upload_to='recipes/', force_format='WEBP'
-        blank=False, null=False 
-    ) 
+    user = models.ForeignKey(
+        User, related_name="holidays_owner", on_delete=models.CASCADE
+    )
+    title = models.CharField(max_length=300, null=False, blank=False)
+    description = models.CharField(max_length=500, null=False, blank=False)
+    Recommendations = RichTextField(max_length=10000, null=False, blank=False)
+    image = CloudinaryField('image', default='placeholder')
+    date_added = models.DateTimeField(auto_now_add=True)
+    
 
-    def_str_(self):
-        return self.title
+    class Meta:
+        ordering = ["-posted_date"]
 
+    def __str__(self):
+        return str(self.title)
