@@ -22,6 +22,7 @@ class Holidays(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
+
 class Comment(models.Model):
     """This is the model for comments"""
     holidays = models.ForeignKey(
@@ -32,8 +33,8 @@ class Comment(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
 
 
-    class Meta:
-        ordering = ["-date_added"]
+class Meta:
+    ordering = ["-date_added"]
 
-    def __str__(self):
-        return str(self.title)
+def __str__(self):
+    return str(self.title)

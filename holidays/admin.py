@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import Holidays
-from .models import comment
+from .models import Holidays, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
