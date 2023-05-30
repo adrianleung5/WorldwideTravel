@@ -22,10 +22,10 @@ class Holidays(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
-    class Comment(models.Model):
+class Comment(models.Model):
     """This is the model for comments"""
-    recipe = models.ForeignKey(
-        Recipe, on_delete=models.CASCADE, related_name='comments')
+    holidays = models.ForeignKey(
+        Holidays, on_delete=models.CASCADE, related_name='comments')
     name = models.CharField(max_length=100)
     info = models.TextField()
     email = models.EmailField()
