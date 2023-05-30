@@ -3,8 +3,7 @@ from .models import Holidays
 from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
-admin.site.register(Holidays)
 
 @admin.register(Holidays)
-class HolidaysAdnub(SummerNoteModelAdmin):
+class HolidaysAdnub(SummernoteModelAdmin):
     summernote_fields = ('content')
