@@ -47,8 +47,13 @@ Below are the user stories that were added to the Github Project.
 
 ## The-Surface-Plane
 
-### Design
+### Tyopgaphy
 I have used google fonts to select a font type that best supports the goals of the website, to provide a fun and easy on eye travel site for holidaygoers. For the main text I have selected Open Sans. To make the headers and the navigation bar stand out form the text, I decided to use Fredoka.
+
+## Color Scheme
+
+The main color schemes for the website are black ( #000000 ) ground. White font (#FFF) and the gold (#8f773c9e) was added to borders, button text and hover affects to add a hint of color to the website.
+
 
 ## Technolgies
 
