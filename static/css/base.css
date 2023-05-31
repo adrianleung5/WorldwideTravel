@@ -57,29 +57,14 @@
 
     /* Social media Icons */
     
+    .social-media {
+        height: 2rem;
+        margin: 1rem;
+    }
+
     .facebook-round {
-        height:2rem;
-        margin:1rem;
-    }
-
-    .linkedin-round {
-        height:2rem;
-        margin:1rem;
-    }
-
-    .twitter-round {
-        height:2rem;
-        margin:1rem;
-    }
-
-    .instagram-round {
-        height:2rem;
-        margin:1rem;
-    }
-
-    .youtube-round {
-        height:2rem;
-        margin:1rem;
+        height: 2rem;
+        margin: 1rem;
     }
 
     a.nav-link {
