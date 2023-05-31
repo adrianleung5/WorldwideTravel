@@ -16,7 +16,7 @@ class Holidays(models.Model):
     )
     title = models.CharField(max_length=300, null=False, blank=False)
     slug = models.SlugField(max_length=200,null = True,)
-    description = models.CharField(max_length=500, null=False, blank=False)
+    description = models.TextField(max_length=1000, null=False, blank=False)
     Recommendations = RichTextField(max_length=10000, null=False, blank=False)
     image = CloudinaryField('image', default='placeholder')
     date_added = models.DateTimeField(auto_now_add=True)
