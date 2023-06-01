@@ -42,6 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account'
+    'allauth.socialaccount'
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
@@ -50,6 +54,11 @@ INSTALLED_APPS = [
     'holidays',
     
 ]
+
+SITE_ID = 1
+
+Login_Redirect_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
