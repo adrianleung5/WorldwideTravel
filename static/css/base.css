@@ -6,16 +6,17 @@
     --main-font: 'Pacifico, Quicksand'
 
     /* Colours */
-    --background: whi
+    --background: #3f006a0f;
     --blue: #0d6efd;
-    --black: #000;  
-    --off-white: #f6f6f6#;
+    --black: #000;
+    --off-white: #f6f6f6;
     --white: #fff;
     --orange: #ffbf50;
 
     /* Utils */
     --small-box-shadow: 1px - 1px 7px 0 #0000061;
     -- border: 1px solid #0000030;
+}
 
     /* Header */
 
@@ -67,16 +68,27 @@
         margin: 1rem;
     }
 
-    a.nav-link {
-        color: var(--black)
+    .instagram-round {
+        height: 2rem;
+        margin: 1rem;
     }
-        
 
-    img.logo {
-        width: 18.75rem
-
+    .twitter-round {
+        height: 2rem;
+        margin: 1rem;
     }
-    
+
+    .youtube {
+        height: 2rem;
+        margin: 1rem;
+    }
+
+    .linkedin-round {
+        height: 2rem;
+        margin: 1rem;
+    }
+
+   
 
 
 
