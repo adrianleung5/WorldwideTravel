@@ -43,6 +43,7 @@
     main {
         flex:1 0 Auto;
         background-color: var(--white);
+        min-height:80vh
 
     }
 
@@ -78,7 +79,7 @@
         margin: 1rem;
     }
 
-    .youtube {
+    .youtube-round {
         height: 2rem;
         margin: 1rem;
     }
