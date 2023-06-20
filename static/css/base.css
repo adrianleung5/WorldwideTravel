@@ -44,8 +44,8 @@
         background-color: var(--white);
         min-height:80vh
 
-    }  .home-background {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dudp7r482/image/upload/f_auto/v1678298172/homebk_rvgsu0.jpg');
+    }  .background-home {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/da4q4qlaf/image/upload/v1687193299/travel_plane_corona_y6ryqt.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -81,7 +81,6 @@
         justify-content: center;
         align-items: center;
     }
-
 
 
     /* Social media Icons */
